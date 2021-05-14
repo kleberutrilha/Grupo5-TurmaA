@@ -6,22 +6,22 @@ class menu {
 
 	public static void main(String[] args) throws Exception {
 		Scanner entrada = new Scanner(System.in);
-		Digita("O ano È 3050 e apÛs guerras a humanidade finalmente comeÁou a desenvolver tecnologias para implantes corporais.",
+		Digita("O ano √© 3050 e ap√≥s guerras a humanidade finalmente come√ßou a desenvolver tecnologias para implantes corporais.",
 				TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\nNÛs da Full Body Tech somos pioneiros nesta revolucion·ria tecnologia.", TimeUnit.MILLISECONDS,
+		Digita("\nN√≥s da Full Body Tech somos pioneiros nesta revolucion√°ria tecnologia.", TimeUnit.MILLISECONDS,
 				temp_dialog);
-		Digita("\nSeu objetivo? Deixar de ser humano e ser um dos mais respeitados VP's (Vice President) obtendo um dos nossos implantes e assim se tornar meio humano, \n meio robÙ.",
+		Digita("\nSeu objetivo? Deixar de ser humano e ser um dos mais respeitados VP's (Vice President) obtendo um dos nossos implantes e assim se tornar meio humano, \n meio rob√¥.",
 				TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\nTemos dois dos mais avanÁados implantes!", TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\nVocÍ ser· desafiado!", TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\nNo fim, somente seus resultados poder„o dizer se vocÍ ser· Tyger Fayol's, Valentinos Taylor's ou continuar· no mundo dos humanos vagando.",
+		Digita("\nTemos dois dos mais avan√ßados implantes!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\nVoc√™ ser√° desafiado!", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\nNo fim, somente seus resultados poder√£o dizer se voc√™ ser√° Tyger Fayol's, Valentinos Taylor's ou continuar√° no mundo dos humanos vagando.",
 				TimeUnit.MILLISECONDS, temp_dialog);
-		Digita("\nVocÍ est· pronto?", TimeUnit.MILLISECONDS, temp_dialog);
+		Digita("\nVoc√™ est√° pronto?", TimeUnit.MILLISECONDS, temp_dialog);
 
 		int escolha_menu;
 
 		do {
-			Digita("\n\n*** FULL BODY TECH *** \n\n1 - Jogar \n2 - Personagens\n3 - CrÈditos \n4 - Sair",
+			Digita("\n\n*** FULL BODY TECH *** \n\n1 - Jogar \n2 - Personagens\n3 - Cr√©ditos \n4 - Sair",
 					TimeUnit.MILLISECONDS, temp_transicao);
 			System.out.println("\n");
 			escolha_menu = entrada.nextInt();
@@ -34,7 +34,7 @@ class menu {
 			} else if (escolha_menu == 4) {
 				System.exit(0);
 			} else {
-				System.out.println("\nOpÁ„o inv·lida, digite novamente: ");
+				System.out.println("\nOp√ß√£o inv√°lida, digite novamente: ");
 			}
 		} while (escolha_menu != 1 && escolha_menu != 2 && escolha_menu != 3 && escolha_menu != 4);
 
@@ -53,7 +53,7 @@ class menu {
 		int escolha_menu;
 
 		do {
-			Digita("\n\n*** FULL BODY TECH. *** \n\n1 - Jogar \n2 - Personagens\n3 - CrÈditos \n4 - Sair",
+			Digita("\n\n*** FULL BODY TECH. *** \n\n1 - Jogar \n2 - Personagens\n3 - Cr√©ditos \n4 - Sair",
 					TimeUnit.MILLISECONDS, temp_transicao);
 			System.out.println("\n");
 			escolha_menu = entrada.nextInt();
@@ -66,7 +66,7 @@ class menu {
 			} else if (escolha_menu == 4) {
 				System.exit(0);
 			} else {
-				System.out.println("\nOpÁ„o inv·lida, digite novamente: ");
+				System.out.println("\nOp√ß√£o inv√°lida, digite novamente: ");
 			}
 		} while (escolha_menu != 1 && escolha_menu != 2 && escolha_menu != 3 && escolha_menu != 4);
 
@@ -75,175 +75,15 @@ class menu {
 
 	static void jogo() throws Exception {
 		Scanner entrada = new Scanner(System.in);
-		int escolha_menu, temp_narrativa = 100, cont_Fayol = 0, cont_Taylor = 0, perdeu = 0;
-		String resposta;
-
-		Digita(" \n   TRIIIIIIM! TRIIIIIM! TRIIIIIM!\n", TimeUnit.MILLISECONDS, temp_narrativa);
-		Digita("\n   Toca o alarme no seu quarto, vocÍ, jogador, desliga sem muito ‚nimo e cansado das noites passadas, apÛs ter perdido o emprego em uma grande multinacional\n com o cargo"
-				+ " de CIO (Chief Information Officer), onde gerenciava a infraestrutura tecnolÛgica da empresa e cuidava do departamento de TI.\n   Agora? Ah...N„o passa de mais um desempregado"
-				+ " em meio a muitos na atual sociedade, cercada de tecnologia e com modificaÁıes de chips e implantes artificiais\n pelo corpo, essa acaba sendo a nova maneira de sobreviver a esta realidade.",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   VocÍ ent„o se levanta, pega algo para comer e d· uma olhada nas notÌcias corporativas do dia, percebendo que no topo das informaÁıes, h· algo que o chama\n muita atenÁ„o,"
-				+ " uma vaga para VP (Vice President) na maior corporaÁ„o tecnolÛgica j· existente, a FULL BODY TECH! A empresa mais capacitada e a maior\n produtora de chips e implantes corporais j· conhecida,"
-				+ " tem centenas de ind˙strias e v·rios investidores de altÌssimos nÌveis que pagam bilhıes para verem\n esta empresa lucrar ainda mais. Quem conseguir est· vaga, n„o apenas ser· t„o famoso e poderoso,"
-				+ " como tambÈm ter· rios de dinheiros para sua vida toda e de\n suas prÛximas geraÁıes... ",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   VocÍ n„o pensa duas vezes, e j· escaneia seu cÛdigo da nuca (todas as informaÁıes sobre vocÍ est„o contidas nele e n„o È mais necess·rio o uso de papel),\n afinal quem n„o quer se tornar"
-				+ " o Vice president de uma corporaÁ„o t„o poderosa? ", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   Passado alguns dias vocÍ recebe a informaÁ„o que seu perfil foi avaliado e considerado apto a participar das prÛximas fases da t„o sonhada vaga, recebendo\n o local e o hor·rio para apresentaÁ„o"
-				+ " dos candidatos. ", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   ALGUNS DIAS DEPOIS....", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   Chegou o grande momento! … hora de ir ao lugar marcado, e n„o poderia deixar de ser na grande corporaÁ„o, enorme, com in˙meros andares, toda espelhada, \nrefletindo o poder que esta empresa tem entre o"
-				+ " sucesso ou fracasso cruel de quem trabalha nela. Na grande recepÁ„o vocÍ È direcionado a um grupo\nde outros candidatos (ou melhor, concorrentes) a vaga, alguns nervosos demais e que demonstram inexperiÍncia"
-				+ " ao cargo, j· outros que est„o no mesmo nÌvel\nque vocÍ, se n„o melhor, por isso TOME CUIDADO para n„o ser jogado para escanteio!",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   Uma TR (Tech Recruiter) chega atÈ seu grupo e inicia seu discurso sobre a vaga:",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n   ìOl·, bem-vindos a Full Body Tech, sou respons·vel por mostrar a vocÍs os setores da corporaÁ„o e avis·-los que a parti do momento que decidirem continuar\n a candidatura, n„o poder„o desistir no meio do caminho."
-				+ " AlguÈm prefere n„o continuar?î", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   Todos se entreolham, mas n„o mudam de opini„o e continuam. A recrutadora ent„o diz:",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n   ì”timo! Primeiro, devo avis·-los sobre como funcionar· as prÛximas fases.... os senhores passar„o por situaÁıes vivenciadas na corporaÁ„o onde as decisıes\n e aÁıes de vocÍs implicar· no Íxito em conseguir est· vaga,"
-				+ " ou falha da mesma e consequentemente sem chances para uma nova contrataÁ„o em outro cargo da\n organizaÁ„o. Estes desafios ser„o feitos durante uma semana e no final deste perÌodo saber„o quem ser· o novo VP da Full Body"
-				+ " Tech.\n   AH, ATEN«√O! nem sempre ser„o avisados que est„o sendo testados, ent„o cuidado com seus movimentos. Enfim, vamos iniciar o tour pela corporaÁ„o.î",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   Durante o tour pela empresa, foi apresentado as ·reas da organizaÁ„o, vocÍ, candidato ent„o percebe que muitos trabalhadores executam seus serviÁos de\n forma errada e que demora o dobro do tempo para serem realizadas."
-				+ " Ent„o vocÍ:", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\nA) Apenas deixar quieto, afinal ainda n„o comeÁou a fase de testes ent„o se precisar resolver este tipo de problema, pensa em uma soluÁ„o mais ‡ frente.\r\n"
-				+ "\nB) Comenta com o respons·vel pela apresentaÁ„o, que percebeu este problema na empresa e sugeri que seria interessante analisar as atividades \ndestes funcion·rios e o tempo que levam para realizar cada "
-				+ "operaÁ„o. \r\n\nC) Analisa a situaÁ„o e depois do tour decide conversar com a gerÍncia sobre a possibilidade de melhorar este problema incentivando o trabalho em equipe \ne colocando uma unidade de direÁ„o para cobrar"
-				+ " os oper·rios a serem mais ·geis nas atividades.\r\n\n", TimeUnit.MILLISECONDS, temp_narrativa);
-		resposta = entrada.next();
-
-		switch (resposta.toUpperCase()) {
-		case "A":
-			Digita("\n   Na verdade, o tour pela empresa j· fazia parte dos testes e a demora na execuÁ„o foi um problema colocado pela Full Body Tech, para verificar se seus \ncandidatos est„o atentos e preparados para gerenciar uma empresa"
-					+ " de grande porte, assim vocÍ retrocedeu um passo de ser contratado pela empresa.",
-					TimeUnit.MILLISECONDS, temp_narrativa);
-			perdeu++;
-			break;
-
-		case "B":
-			Digita("\n   O respons·vel passou a frente sobre a sua sugest„o e o prÛprio CEO concordou que sua an·lise seria uma Ûtima soluÁ„o para a organizaÁ„o, te dando o \nprimeiro ponto para a sua possÌvel contrataÁ„o.",
-					TimeUnit.MILLISECONDS, temp_narrativa);
-			cont_Taylor++;
-			break;
-
-		case "C":
-			Digita("\n   Sua ideia È recebida de bom grado na gerÍncia, sendo passada para o CEO da empresa que concordou com sua opini„o, considerando uma Ûtima soluÁ„o \npara a organizaÁ„o, te dando o primeiro ponto para a sua"
-					+ " possÌvel contrataÁ„o.", TimeUnit.MILLISECONDS, temp_narrativa);
-			cont_Fayol++;
-			break;
-		}
-
-		Digita("\n\n   Parece que nem todos foram bem neste primeiro desafio, alguns candidatos demonstram mais inquietaÁ„o que antes, isso com certeza \nn„o È o perfil de um Vice president a altura desta corporaÁ„o."
-				+ " E para desespero destas pessoas, a Tech Recruiter, anuncia que o prÛprio CEO da empresa\n ir· tambÈm avaliar e supervisionar os candidatos durante as fases seguintes.",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   Depois da apresentaÁ„o e do primeiro teste aplicado os candidatos s„o dispensados e pedindo para retornarem no dia posterior para mais desafios.",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		switch (resposta.toUpperCase()) {
-		case "A":
-			Digita("\n\n   …h... para o primeiro dia n„o foi t„o bom assim, tome cuidado da prÛxima vez e tome iniciativas antes de n„o ter mais nenhuma chance.",
-					TimeUnit.MILLISECONDS, temp_narrativa);
-			break;
-
-		case "B":
-			Digita("\n\n   Olha sÛ! vocÍ n„o se saiu t„o ruim assim, mas vamos com calma esta foi apenas o primeiro dia, ainda lhe falta mais quatro dias atÈ o resultado e \ncom certeza ter„o testes mais desafiadores que este.",
-					TimeUnit.MILLISECONDS, temp_narrativa);
-			break;
-
-		case "C":
-			Digita("\n\n   Olha sÛ! vocÍ n„o se saiu t„o ruim assim, mas vamos com calma esta foi apenas o primeiro dia, ainda lhe falta mais quatro dias atÈ o resultado e \ncom certeza ter„o testes mais desafiadores que este.",
-					TimeUnit.MILLISECONDS, temp_narrativa);
-			break;
-
-		}
-
-		Digita("\n\n    NO DIA SEGUINTE... ", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   Mais um dia na empresa e como dito anteriormente, o Diretor executivo participar· supervisionando alguns testes, como este. \r\n"
-				+ "\n   O CEO, imagem da FULL BODY TECH, Poderoso e multimilion·rio faz a empresa render centenas de trilhıes ao ano, sobra-lhe dinheiro na conta, mas falta-lhe \nhumildade no seu interior. A ambiÁ„o o move e È isso que"
-				+ " ele procurar em seu novo VP.\r\n", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n   Ele se apresenta ao grupo de candidatos e de forma direta e sem rodeios j· apresenta o prÛximo desafio que ter· que enfrentar: ",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\n   ìEu como o CEO, exijo que aumentem a produtividade em 120% dos nano chips para implementaÁ„o cibernÈtica.î\r\n"
-				+ "   VocÍ sabe que isso n„o È tarefa f·cil, mas precisa tomar aÁıes. VocÍ chega ‡ linha de produÁ„o e: ",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\nA) Observa toda rotina da linha de produÁ„o e toma como aÁ„o cobrar mais trabalho dos oper·rios. VocÍ observa que os funcion·rios est„o fazendo pouco e \nna sua metodologia, o pe„o tem que ralar. Os funcion·rios"
-				+ " v„o considerar isso como um artifÌcio para fazÍ-los trabalharem mais. O importante È entregar os 120%.\r\n"
-				+ "\nB) VÍ a f·brica e nota que est· faltando organizaÁ„o. Otimizando a estrutura da organizaÁ„o, chegaria naturalmente a m·xima efic·cia de cada uma das partes.\n CrÍ no aumento salarial e pensa em dar bÙnus aos "
-				+ "melhores funcion·rios. Rumo aos 120%.\r\n"
-				+ "\nC) Nota que os funcion·rios est„o cansados e resolve dar o dia de folga para todos. Afinal, amanh„ È um novo dia e com certeza v„o chegar descansados e \nprontos para cumprir o aumento de produtividade.\r\n\n",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-		resposta = entrada.next();
-
-		Digita("", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		switch (resposta.toUpperCase()) {
-		case "A":
-			Digita("\n\n   Seus subordinados foram a loucura com a sua primeira decis„o. Eles est„o trabalhando praticamente como escravos! Mas o aumento da \nremuneraÁ„o deles de acordo com a produtividade certamente "
-					+ "nos trar· muitos lucros. Bom saber que no seu segundo desafio vocÍ se preocupou na metodologia.\n Seu prÛximo desafio ser· voltado para o time de RH.",
-					TimeUnit.MILLISECONDS, temp_narrativa);
-			cont_Taylor++;
-			break;
-
-		case "B":
-			Digita("\n\n   VocÍ pensou muito bem no departamento como um todo. Bom saber que no seu segundo desafio vocÍ se preocupou na organizaÁ„o. Isso \nmostra claramente seus conceitos. Seu prÛximo desafio ser· voltado"
-					+ " para o time de RH.", TimeUnit.MILLISECONDS, temp_narrativa);
-			cont_Fayol++;
-			break;
-
-		case "C":
-			Digita("\n\n   VocÍ È maluco? Dar um dia de folga para todos os funcion·rios n„o foi legal. Espero que na sua prÛxima tarefa vocÍ tenha mais \ncuidado com a corporaÁ„o, ela n„o perdoa erros. E seu prÛximo desafio"
-					+ " ser· voltado para nosso time de RH.", TimeUnit.MILLISECONDS, temp_narrativa);
-			perdeu++;
-			break;
-
-		}
-
-		Digita("\n\n   ApÛs a conclus„o do segundo desafio, o grande CEO pergunta a cada um dos candidados, incluive vocÍ jogador, sobre a administraÁ„o da empresa. \n\r   ìHoje, vejo que nossa corporaÁ„o est· sem comando. Nosso "
-				+ "time de RH n„o È especializado em contratar gerentes, supervisores, coordenadores... \nPreciso que vocÍ me diga se È necess·rio ou n„o ter esta preocupaÁ„o. Me diz: î ",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita("\n\nA) ìSim, È necess·rio ter esta preocupaÁ„o.î\r\n\nB) ìN„o, n„o tem a menor necessidade.î\r\n",
-				TimeUnit.MILLISECONDS, temp_narrativa);
-
-		Digita(" ", TimeUnit.MILLISECONDS, temp_narrativa);
-
-		if (cont_Taylor > 1) {
-			Digita("\n\n   ParabÈns vocÍ ganhou a vaga t„o sonhada, se caracterizando com Taylor",
-					TimeUnit.MILLISECONDS, temp_narrativa);
-		} else if (cont_Fayol > 1) {
-			Digita("\n\n   ParabÈns vocÍ ganhou a vaga t„o sonhada, se caracterizando com Fayol", TimeUnit.MILLISECONDS,
-					temp_narrativa);
-		} else if (perdeu > 1) {
-			Digita("\n\n   Que horror! VocÍ falhou miseravelmente e n„o È digno de se tornar um VP, V· para o olho da rua, AGORA!!",
-					TimeUnit.MILLISECONDS, temp_narrativa);
-		}
-
+		int escolha_menu, temp_narrativa = 100;
+		
 		do {
 			System.out.println("\n\n0 - Menu Principal");
 			escolha_menu = entrada.nextInt();
 			if (escolha_menu == 0) {
 				menu();
 			} else {
-				System.out.println("\nOpÁ„o inv·lida, digite novamente: ");
+				System.out.println("\nOp√ß√£o inv√°lida, digite novamente: ");
 			}
 		} while (escolha_menu != 0);
 
@@ -253,10 +93,10 @@ class menu {
 	static void personagens() throws Exception {
 		Scanner entrada = new Scanner(System.in);
 		int escolha_menu, temp_narrativa = 20;
-		Digita("\n<<Tyger Fayol's>> nascido como Jules Henri Fayol, apÛs sofrer um grave acidente recebe um implante corporal.\n… um desenvolvedor que ajudou a tornar o movimento cibernÈtico que È hoje. "
-				+ "Ele È o principal desenvolvedor \nque deu origem aos primeiros implantes, e se tornou uma das figuras mais proeminentes na luta a favor da classe oper·ria.\n",
+		Digita("\n<<Tyger Fayol's>> nascido como Jules Henri Fayol, ap√≥s sofrer um grave acidente recebe um implante corporal.\n√â um desenvolvedor que ajudou a tornar o movimento cibern√©tico que √© hoje. "
+				+ "Ele √© o principal desenvolvedor \nque deu origem aos primeiros implantes, e se tornou uma das figuras mais proeminentes na luta a favor da classe oper√°ria.\n",
 				TimeUnit.MILLISECONDS, temp_narrativa);
-		Digita("\n<<Valentinos Taylor's>> nascido como Frederick Taylor, implantou em si mesmo um chip corporal criado por ele \npara aumentar o seu conhecimento e chegar ao topo da corporaÁ„o.",
+		Digita("\n<<Valentinos Taylor's>> nascido como Frederick Taylor, implantou em si mesmo um chip corporal criado por ele \npara aumentar o seu conhecimento e chegar ao topo da corpora√ß√£o.",
 				TimeUnit.MILLISECONDS, temp_narrativa);
 		do {
 			System.out.println("\n\n0 - Menu Principal");
@@ -264,7 +104,7 @@ class menu {
 			if (escolha_menu == 0) {
 				menu();
 			} else {
-				System.out.println("\nOpÁ„o inv·lida, digite novamente: ");
+				System.out.println("\nOp√ß√£o inv√°lida, digite novamente: ");
 			}
 		} while (escolha_menu != 0);
 
@@ -283,7 +123,7 @@ class menu {
 			if (escolha_menu == 0) {
 				menu();
 			} else {
-				System.out.println("\nOpÁ„o inv·lida, digite novamente: ");
+				System.out.println("\nOp√ß√£o inv√°lida, digite novamente: ");
 			}
 		} while (escolha_menu != 0);
 
