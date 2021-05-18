@@ -217,7 +217,181 @@ class menu {
 		resposta=entrada.next();
 		
 		switch(resposta.toUpperCase()) { //Agora o próximo estará responsável pela consequência das alternativas que o usuário escolher.
+		case "A":
+			Digita("\nÓtimo! Mas você está preparado para um desafio administrativo no RH? Não vamos te enganar... A situação aqui é caótica...  ",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+				break;
+
+		case "B":
+			Digita("\n\nVocê pode até ignorar isso, mas será momentaneo. Afinal, o desafio começará AGORA! ",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+				break;
+		}
+
+		Digita(" \n\n*DERREPENTE TOCA UM ALARME ESTRANHO*\n\n ", TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\nEm meio ao silencio, ecoa a voz da TR (Tech Recruiter)...\n", TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita(" \n\n “Parabéns a todos que chegaram até esta fase do processo, daqui para frente o desafio de vocês é mais trabalhoso se tratando de esforço mental ao invés de corporal...”\n\n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("Após pisar o pé naquele escritório branco como algodão com paredes laminadas e iluminação clara como a neve, a primeira coisa que chama atenção são os PD's (Power Diamond's)\n"
+
+				+ "é assim que eles chamam os super computadores de alta performance, não só para registrar estoque de peças, faturamento diário, entre outros,\n"
+				+ "como contem toda a ficha dos candidatos e suas pontuações no meio do processo! ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\n Durante sua permanencia no RH da empresa você terá TOTAL ACESSO aos Power Diamond's, assim o seu desafio será analisar planilhas de gastos mensais\n"
+				+ "e chegar a uma conclusão sobre o caminho que o dinheiro da empresa está sendo levado...\n\n"
+				+ "\n\n Após ser deixados a sós no escritório, você identifica uma pasta no PD com o nome de -- Cyber Candidater's (Pontuação Pessoal) -- "
+				+ "\n\n...\n  ", TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\nQue tal dar uma espiada em como você está se saindo durante esses testes? Afinal, o mundo é dos Cyber Espertos...\n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\nA) Abrir a pasta para saber como estou me saindo e corrigir os meus erros. Assim sairei na frente dos outros para essa vaga!\n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+		Digita("\nB) Melhor não mexer nisso. Prefiro saber o meu resultado no final de todo o processo, mesmo que seja ruim... \n",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+		resposta = entrada.next();
+
+		switch (resposta.toUpperCase()) {
+
+		case "A":
+			Digita("\n\nInfelizmente você não teve sorte... Um micro robô-filmador estava instalado no seu Power Diamond, "
+					+ "assim que você clicou na pasta ele acendeu o seu PD alertando a Tech Recruiter... ",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			break;
+
+		case "B":
+			Digita("\n\nSua honestidade serviu bem nesse momento... Afinal, havia um micro robô-filmador instalado nos Power Diamond's. "
+					+ "Outros 2 candidatos que pensaram em ser “Espertos” , foram eliminados na hora pela sua própria desonestidade.\n ",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			break;
+
+		}
+
+		Digita("\n\nTome mais cuidado da proxima vez, tudo nessa empresa é um teste. Você deve se manter firme para alcançar o cargo! ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\nAgora, com a pasta certa em mente você pode se depara com uma planilha cheia de códigos. Essa planilha arquiva a entrada de peças no estoque e "
+				+ "\nconforme o responsável recebe o QR Code com a nota fiscal, ele deve passar para a seus superiores. \n\n  ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		ArrayList<String> lista = new ArrayList<String>(); // ArrayList criado para adiconar uma lista que depois será embaralhada a cada vez que o jogador iniciar o game.
+		lista.add("Filamento Emissor");
+		lista.add("Filamento Base");
+		lista.add("Filamento Coletor");
+		lista.add("Filamento Auxiliar");
+
+		Collections.shuffle(lista); // Função que embaralha o ArrayList criado a cima.
+
+		Digita("\nVocê começa a comparar os itens utilizados para a produção dos chips e percebe que o transistor principal é descrito como contendo 4 filamentos: \n\n",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+		Digita(">> " + lista.get(0) + "\n", TimeUnit.MILLISECONDS, temp_narrativa); // A função "Lista.get() chama o item da lista na posição que você escolher. Neste caso foi a primeira posição.
+		Digita(">> " + lista.get(1) + "\n", TimeUnit.MILLISECONDS, temp_narrativa);
+		Digita(">> " + lista.get(2) + "\n", TimeUnit.MILLISECONDS, temp_narrativa);
+		Digita(">> " + lista.get(3) + "\n", TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\nNotando que o filamento (auxiliar) não é necessario no transistor, você percebe uma diferença de R$ 17,00 por transistor entre um com filamento auxiliar e outro sem...\n\n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\nA) Neste caso, anotarei a diferença de valor para economia da compra do transistor e passarei a Tech Recruiter. \n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+		Digita("\nB) Se esse transistor foi comprado com um quarto filamento é porque a produção utiliza de alguma forma, então melhor procurar outro problema e não atrapalhar a produção.\n",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+		Digita("\nC) Melhor nem mexer com essa planilha, afinal eu vou cuidar mais do chão de fabrica e ficar de olho na produção... \n\n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+		resposta = entrada.next();
+
+		switch (resposta.toUpperCase()) {
+
+		case "A":
+			Digita("Sua observação foi aceita com muito valor. O engenheiro de produção não conseguiu notar que o quarto filamento não era utilizado"
+					+ " e além disso estava fazendo muitas peças apresentarem instabilidades. \n",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			cont_Fayol++;
+			break;
+
+		case "B":
+			Digita("A produção encontrou uma forma de estabilizar o quarto filamento e adicionar uma utilidade para balancear átomos e elétrons em sua base.\n ",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			cont_Taylor++;
+			break;
+
+		case "C":
+			Digita("\nOutro candidato encontrou um gasto desnecessário com a camada de silicio utilizada no chip, ele relatou a Tech Recruiter sobre a possivel troca de fornecedor e ela adorou a observação... "
+					+ "Você precisar tomar a atitude! \n\n ", TimeUnit.MILLISECONDS, temp_narrativa);
+			perdeu++;
+			break;
+		}
+
+		Digita("\nVocê continua a mexer nas planilhas calmamente enquanto... ", TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\n*SEU COMPUTADOR APRESENTOU ALGUNS CÓDIGOS ESTRANHOS* \n\n", TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("0100111011010000101100101100111010111010\n" + "1100111100001110101110011101010111010101\n"
+				+ "0001000111011011110011101011010010100101\n" + "1101101011011 <<AVISO>> 1010011010101011\n"
+				+ "1010101101110010110010110111010010101101\n" + "0011011001101100011100101101001101010101\n"
+				+ "1110011010011001100010101110110101111010\n\n", TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\nParece que você está recebendo alerta de um problema raro que aconteceu na empresa... ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\nEnquanto todos os Cyber Candidater's estavam empenhados em achar soluções para economias da organização, analisando planilhas e fornecedores "
+				+ "\n(exceto aqueles dois pobres coitados que não conseguiram conter a sua ansiedade em descobrir o seu desempenho até o momento e foram eliminados),"
+				+ "\nhouve uma discussão entre o funcionario que executa a separação de nano-eletrodos dos chips no setor V1R-X07 "
+				+ "\ne o outro que executa o armazenamento dos implantes em cilindros no setor GRZ1-M2.\n\n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\nOs operadores iniciaram um confronto pois após serem estocados os chips estavam apresentando defeito nos nano-eletrodos e assim o funcionario do setor V1R-X07 "
+				+ "\nestava recebendo reclamações posteriores pelos danos aos nano-eletrodos.\n", TimeUnit.MILLISECONDS,
+				temp_narrativa);
+
+		Digita("\n\nEsse acontecimento não estava nos planos da TR (Tech Recruiter), mas calhou bem com os testes de RH nesse dia...\n"
+				+ "\nTodos receberam o aviso através dos códigos em seus Power Diamond's relatando o ocorrido e também instruções para resolver o problema entre eles. \n\n  ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\nO seu desafio é: definir uma solução coerente para o confronto entre eles.\n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		do {
+
+			Digita("\n\nSolução A: Definir um novo modo de estocar os chips produzidos para não danificar os nano-eletrodos. ",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+
+			Digita("\n\nSolução B: Analisar a forma que está sendo separado os nano-eletrodos e verificar se o erro não está acontecendo antes do armazenamento. ",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+
+			Digita("\n\nSolução C: Chamar o gerente geral para decidir a melhor opção. \n ", TimeUnit.MILLISECONDS,
+					temp_narrativa);
+			resposta = entrada.next();
+
+			if (resposta.equalsIgnoreCase("A")) {
+				Digita("\n\nSua solução não poderia ser melhor! Mostrou ser um grande resolvedor de confrontos. Nenhum outro acima de você gostaria de resolver isso. ",
+						TimeUnit.MILLISECONDS, temp_narrativa);
+				cont_Fayol++;
+				saida = true;
+
+			} else if (resposta.equalsIgnoreCase("B")) {
+				Digita("\n\nNão é errado pensar no outro lado da moeda, neste caso, da CRIPTO-moeda... Vamos ver o que está acontecendo no setor V1R-X07. ",
+						TimeUnit.MILLISECONDS, temp_narrativa);
+				cont_Taylor++;
+				saida = true;
+
+			} else if (resposta.equalsIgnoreCase("C")) {
+				Digita("\n\nComo você quer chamar o gerente geral para resolver este assunto, se o teste é seu? Quem deveria resolve-lo é VOCÊ! Sua atitude não foi nada coerente. ",
+						TimeUnit.MILLISECONDS, temp_narrativa);
+				perdeu++;
+				saida = true;
+			}
+
+		} while (!saida);
+
+		Digita("\n", TimeUnit.MILLISECONDS, temp_narrativa);
 		
+		Digita("\n\n<<<O dia foi longo, você teve até que resolver um problema entre dois funcionarios... QUE LOUCURA CARA! Os testes do terceiro dia se encerram por hoje.>>> \n\n ",
+				TimeUnit.MILLISECONDS, temp_narrativa);
 		
 		}
 		
