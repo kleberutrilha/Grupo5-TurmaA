@@ -270,6 +270,102 @@ class menu {
 			break;
 
 		}
+		//temporariamente esta parte permanecerá aqui:
+		Digita("\n\n   Candidato, até agora você foi muito bem, por esta razão quero que você me ajude com algo, desde a nossa ultima missão, "
+				+ "tivemos diversas avarias em nossas naves, os comandantes das nossas espaçonaves estão reclamando que as condições de trabalho "
+				+ "são precários e nos ameaçam dizendo que se nada mudar em uma semana, todos vão parar e ocorrerá uma greve geral, para a função "
+				+ "que você está se candidatando, é fundamental que você saiba como lidar com este tipo de situação, agora eu quero que você solucione"
+				+ " este problema para mim, marcarei uma reunião com os nossos pilotos em uma hora, até lá, vamos conversar sobre nosso orçamento, nossos planos e até aonde podemos chegar.”\r\n"
+				+ "\r\n" + "Com essa missão, você se prepara e vai encontrar os pilotos no saguão E-79.",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\nA) Você encontra os pilotos e faz uma promessa em que diz que toda situação se normalizará em um mês, pois o orçamento máximo já foi "
+				+ "atingido e apenas teríamos receitas no próximo mês.\r\n"
+				+ ".\r\n"
+				+ "\nB) Você vai para a reunião junto com o diretor e o gerente, quando lhe é dada a voz, você diz que a empresa está passando por problemas"
+				+ " financeiros, mas estará investindo em melhorias das espaçonaves para que todos tenham melhorias nas condições humanas e atualizar as espaçonaves"
+				+ " para que o trabalho seja menos estressante para seus colaboradores. \r\n\n"
+				+ "C) Você se prepara para a reunião e mostra um gráfico e alguns vídeos, inicia mostrando os vídeos em que a maioria dos seus colaboradores desrespeitam "
+				+ "as ordens e recomendações do responsável do setor e são irresponsáveis com as espaçonaves, o que acarreta uma série de avarias nas espaçonaves, após a "
+				+ "exibição dos vídeos lhes são apresentados os gráficos com os prejuízos gerados pela indisciplina dos pilotos, o que acarretou em uma quantidade menor de"
+				+ " valor para manutenção e condição mais precária para seus trabalhadores.\r\n"
+				+ "\r\n\n", TimeUnit.MILLISECONDS, temp_narrativa);
+		resposta = entrada.next();
+
+		switch (resposta.toUpperCase()) {
+		case "A":
+			Digita("\n   Como conversamos anteriormente eu lhe expliquei da nossa situação, você sabe que essa situação não se resolverá no próximo mês, você apenas nos deu 1"
+					+ " mês para que tudo volte a estar como está hoje, só que provavelmente a irá deles será muito maior por conta dessa promessa que nunca será cumprida.",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			perdeu++;
+
+			break;
+
+		case "B":
+			Digita("\n   Os trabalhadores sentiram confiança em você, muitas vezes tentamos apenas acalmar os nervos dos nossos colaboradores, mas você lhes deu uma esperança"
+					+ " de que as coisas vão realmente mudar, e que eles vão se sentir privilegiados de estarem conosco!",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			cont_Taylor++;
+			break;
+
+		case "C":
+			Digita("\n   SAgora eu entendi o porque você ficou tanto tempo falando com os inspetores e com o chefe de sessão, ficou claro em que boa parte dos problemas causados"
+					+ " foram gerados por eles mesmos, faremos um anuncio dizendo que atenderemos a algumas exigências deles, porém conversarei com o chefe de sessão para que a disciplina"
+					+ " seja muito mais rigorosa e que atos como os que vimos não serão mais tolerados.",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			cont_Fayol++;
+			break;
+		}
+
+		Digita("\n\n   Candidato, estávamos fazendo uma pesquisa anônima na nossa empresa para ver as principais reclamações dos funcionários e dos diretores, com isso constatamos dois"
+				+ " problemas, a reclamação principal dos nossos funcionários é que o clima na empresa não é bom, são muitos os casos relatados de pilotos interplanetários dando broncas "
+				+ "muito ríspidas em pilotos novatos em treinamento, muitos se dizem desconfortáveis e desmotivados para continuarem conosco, por outro lado, os diretores dizem que sentem "
+				+ "que o trabalho entregue não é satisfatório, dizem que a seleção de trabalhadores está fazendo um trabalho péssimo na hora de recrutar talentos, também reclamam da falta de"
+				+ " comunicação entre trabalhadores, lhe darei o resto do dia para pensar em uma solução viável para que possamos solucionar ao menos uma boa parcela destes problemas."
+				+ "Você não tem muito tempo para solucionar esses problemas, é melhor pensar rápido e tomar alguma atitude, você sabe que essa é uma chance única na sua vida e não pode desperdiçar esta oportunidade!",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+
+		Digita("\n\nA) Você volta ao seu chefe e lhe propõe algumas ideias, para solucionar o problema dos funcionários, você deveria fazer uma reunião com seus principais colaboradores, "
+				+ "cobrando uma explicação dos relatos de seus funcionários de baixo escalão, ressaltando que a justiça deve prevalecer em toda organização, atitudes como essa não serão mais"
+				+ " toleradas, e que caso o mesmo aconteça ao contrário, a mesma atitude será cobrada, direitos iguais. Já em relação a reclamação dos pilotos interplanetários a atitude correta"
+				+ " a se fazer seria uma reciclagem no RH para uma melhora na captação de talentos e que os colaboradores sejam cobrados respeitosamente com argumentos construtivos e mostrando os"
+				+ " erros para que eles possam corrigi-los e evoluírem, o clima ficaria muito melhor e também melhoraria o desempenho dos jovens pilotos.\r\n"
+				+ "\nB) Você propõe uma palestra motivacional para todos pregando a união e o respeito entre os pilotos mais jovens que fazem a rota regional, pilotos interplanetários e pessoas da"
+				+ " área administrativa para que todos possam se darem melhor e terem mais empatia entre todos. \r\n\n"
+				+ "C) Você propõe ao seu chefe para que os funcionários com pouco tempo de empresa tenham um bônus por não ultrapassar um limite de erros e não fugirem dos padrões propostos para uma"
+				+ " empresa, assim fazendo eles estudarem sobre o tema para que possam melhorar na sua função o que geraria além de uma recompensa financeira extra, uma enorme probabilidade de nunca "
+				+ "serem vítimas de tratamento ríspidos em público, porém ainda ressaltando que essas atitudes não serão mais permitidas para que eles fiquem tranquilos quanto a essa relação, já em "
+				+ "relação aos pilotos mais experientes e nossa parte administrativa que seja proposto uma análise mais aprofundada sobre os problemas e que serão devidamente advertido aos jovens pilotos"
+				+ " para que se possa ter uma resposta mais rápida e eficiente dos jovens pilotos, causando assim um aumento da produção de forma eficiente.\r\n"
+				+ "\r\n\n", TimeUnit.MILLISECONDS, temp_narrativa);
+		resposta = entrada.next();
+
+		switch (resposta.toUpperCase()) {
+		case "A":
+			Digita("\n   Parece que todos entenderam que não será mais tolerado este tipo de atitude, o que é ótimo, todos aparentavam estar sabendo muito bem dos erros que cometeram e sabem que terá uma"
+					+ " fiscalização mais rígida agora, certamente não vão mais cometer este tipo de erro.",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			cont_Fayol++;
+
+			break;
+
+		case "B":
+			Digita("\n   Sabemos que esse tipo de método raramente é o suficiente, as pessoas apenas vão para essas palestras apenas para descansar ou porque estão sendo obrigadas, é um custo alto de contratar "
+					+ "alguém para este tipo específico de serviço e parar nossas operações para algo com chances de retorno extremamente baixas, eu esperava mais de você, achei que você era a pessoa que iria ser"
+					+ " o maior talento recente da nossa empresa, será que eu estava enganado?",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			perdeu++;
+			break;
+
+		case "C":
+			Digita("\n   Você pode estar certo quanto a isso, porém, temos que ter cuidado para que a cada novo problema de ambiente não acabe fazendo-os pensar que serão pagos para esquecerem de tudo isso, mas é "
+					+ "uma alternativa viável momentaneamente, espero que você esteja correto.",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			cont_Taylor++;
+			break;
+			
+		}
+		//Parte Temporaria.
 
 		Digita("\n\nTome mais cuidado da proxima vez, tudo nessa empresa é um teste. Você deve se manter firme para alcançar o cargo! ",
 				TimeUnit.MILLISECONDS, temp_narrativa);
