@@ -270,6 +270,81 @@ class menu {
 			break;
 
 		}
+		
+		Digita("   Um dos propulsores da nave Start Coding situada na constelação de Aldebaran perto do planeta Mitry, necessita de reparos"
+				+ " e possivelmente a sua troca.\n"
+				+ "\r\n"
+				+ "Você será responsável por organizar uma expedição espacial que tem como objetivo concertar o propulsor da nave.\n"
+				+ "\r\n"
+				+ "O propulsor que deve ser utilizado é o Haward-35J, esse equipamento é produzido em 1 semana e 3 dias.\n"
+				+ "\r\n"
+				+ "Mas aqui que está o problema, a Start Coding está com apenas um propulsor funcionando e não consegue efetuar a manobra z,"
+				+ " essa manobra é feita quando o campo \ngravitacional do planeta ou de um buraco negro está puxando a nave.\n"
+				+ "\r\n"
+				+ "A nave está sendo puxada por um buraco negro chamado Garganta que diferente dos outros não faz danos ao seu redor e não"
+				+ " possui a radiação de Hawking.\n"
+				+ "Mas dentro do buraco negro é que está o problema, pois uma vez lá dentro não há como retornar.\n"
+				+ "\nA tribulação que é pega por esse buraco negro tem até 4 dias para sair do campo gravitacional, pois a gravidade ali"
+				+ " atua em um tempo diferente.\n"
+				+ "E então como você vai organizar a produção e entrega do propulsor? Sua missão é resgatar todos os 5 astronautas da nave"
+				+ " com vida.\n"
+				+ "Lembrando que o trajeto do seu local atual até a Start Coding é de 1 dia:\n", TimeUnit.MILLISECONDS,
+				temp_narrativa);
+
+		String[] alternativa = {
+				"\n A) Um engenheiro mecânico percebe o grande alvoroço na fábrica e pede para conversar com você, ali os dois criam"
+				+ " estratégias em como executar \na construção do projeto analisando o tempo que será dedicado as operações e planejando com"
+				+ " um astrofísico a melhor rota de entrega do propulsor. \nAlém de planejar cada tarefa dos funcionários selecionando-os"
+				+ " conforme a execução de seu trabalho.\n",
+				"\n B) Você observa que o prazo é curto para a produção do propulsor Haward-35J, e então decide pegar um modelo similar que"
+				+ " encontrou na \nfábrica e o mais rápido possível consulta um dos assistentes de rotas interplanetárias e envia-o para o"
+				+ " espaço através de uma rota pelo buraco \nde minhoca perto da constelação de Aioros de Sagitário. De acordo com seus"
+				+ " cálculos e dedução este equipamento atende as necessidades da Start Coding.\n",
+				"\n C) Sabendo do curto prazo você organiza uma comitiva de urgência com engenheiros e operários para discutir sobre as"
+				+ " propriedades de \nconstrução do propulsor, e em quanto tempo conseguem construí-lo dentro do prazo apertado. A conversa"
+				+ " inicia-se com a divisão das tarefas \nonde os operários terão que trabalhar ainda mais para salvar os astronautas.\n" };
+
+		// busca as alternativas dentro do vetor e imprime no Sysout, selecionando cada
+		// uma delas e buscando e trazendo a próxima alternativa
+		for (int i = 0; i < alternativa.length; i++) {
+			Digita(alternativa[i], TimeUnit.MILLISECONDS, temp_narrativa);
+		}
+		resposta = entrada.next();
+
+		// compara a resposta que o usuário digitou com a alternativa da questão
+		if (resposta.toLowerCase().equals("a")) {
+			Digita("   Essa ajuda que recebeu do engenheiro mecânico abriu os seus olhos e possibilitou a organização das tarefas,"
+					+ " e conseguiram obter os materiais necessários para a construção do Haward-35J. Após a reunião uma turma de engenheiros"
+					+ " foi selecionada justamente para aquela ocasião, pois sabiam trabalhar com horários apertados e conheciam muitos"
+					+ " termos técnicos que seriam de grande ajuda aqui. \r\n"
+					+ "O propulsor foi finalizado em 2 dias inteiros, e a questão agora seria qual rota tomar para realizar a entrega,"
+					+ " durante a conversa com o astrofísico decidiram escolher o caminho da rota de Dohko na constelação de Libra. O trajeto foi bem-sucedido e nenhum obstáculo surgiu no caminho.\r\n"
+					+ "A entrega foi realizada no terceiro dia faltando 10horas para o quarto dia, mas a instalação do propulsor durou 1h30,"
+					+ " pois o campo gravitacional do buraco negro ficou um pouco intenso e turbulências surgiram. Mas no final foi"
+					+ " instalado com sucesso e todos os astronautas retornaram para a civilização.\r\n"
+					+ "Os recrutadores o parabenizaram pelo excelente trabalho e agora estão com altas expectativas em você.\r\n",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			cont_Taylor++;
+
+		} else if (resposta.toLowerCase().equals("b")) {
+			Digita("   Você não estudou muito bem quais eram as especificações do propulsor e o selecionou com base no empirismo, e não"
+					+ " consultou um engenheiro para a aprovação do envio do propulsor. O que ocasionou na perda de um tripulante da nave, pois o propulsor enviado não executava a manobra Z, mas sim a manobra Z1 que é economizar combustível e em casos de urgências forçá-lo a usar 75% de sua capacidade o que o deixa ineficiente por 1 hora.\r\n"
+					+ "A Start Coding consegue sair do buraco negro, mas a nave sai com sérios estragos na lateral e no painel de controle"
+					+ " além da perda de um dos tripulantes que era o médico Burton.\r\n",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			perdeu++;
+		} else if (resposta.toLowerCase().equals("c")) {
+			Digita("  Você fez bem em consultar os engenheiros e organizar uma reunião de emergência, com ela cada operário e engenheiro"
+					+ " conseguiram executar a produção do propulsor em 3 dias com a rápida distribuição das tarefas, foi aumentado o expediente dos funcionários para salvar os astronautas. No final da conclusão da construção analisaram a melhor rota e decidiram usar a tecnologia Zyon que faz viagens na velocidade da luz, e conseguiram entregá-lo a Start Coding no terceiro dia faltando 5 horas para o quarto dia.\r\n"
+					+ "A instalação do propulsor levou 45 minutos e, foi de fácil encaixe, os recrutadores o parabenizam pelo excelente"
+					+ " trabalho\r\n",
+					TimeUnit.MILLISECONDS, temp_narrativa);
+			cont_Fayol++;
+		} else {
+			Digita("   Digite uma opção válida...", TimeUnit.MILLISECONDS, temp_narrativa);
+
+		}
+		
 		//temporariamente esta parte permanecerá aqui:
 		Digita("\n\n   Candidato, até agora você foi muito bem, por esta razão quero que você me ajude com algo, desde a nossa ultima missão, "
 				+ "tivemos diversas avarias em nossas naves, os comandantes das nossas espaçonaves estão reclamando que as condições de trabalho "
