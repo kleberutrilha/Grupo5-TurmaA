@@ -271,6 +271,23 @@ class menu {
 
 		}
 		
+		Digita("   Você são conduzidos a uma outra parte da corporação que até então era desconhecida, essa nova área é o orgulho do time"
+				+ " de pesquisas e viagens espaciais." + "Vocês escutam em alto e bom som, um brado que parece vir de alguma pessoa que está"
+				+ " entre as centenas de pesquisadores na plataforma abaixo, sim isso mesmo que ouviu. O lugar em que se encontram possui"
+				+ " pequenas plataformas que ficam suspensas no ar devido a força da gravidade que foi convertida em um dispositivo que"
+				+ " suspende e move as plataformas de um lugar para outro.\n ", TimeUnit.MILLISECONDS, temp_narrativa);
+		
+		Digita("\n   Esse brado que ouviram anteriormente é do pesquisador chefe da área conhecido como, Brainiac. Que tenta balbuciar algumas"
+				+ " palavras(Afinal ele está cansado, pois veio literalmente pulando entre as plataformas para chegar até vocês).\n",
+				TimeUnit.MILLISECONDS, temp_narrativa);
+		
+		Digita("\n   Bem-vindos meus caros viajantes intergaláticos, esse é nosso espaço de pesquisas espaciais onde procuramos por diversas"
+				+ " fomas de vidas que nosso universo abriga, ao qual, ainda não conhecemos.\n",TimeUnit.MILLISECONDS, temp_narrativa);
+		
+		Digita("\n   Sem mais delongas, tenho um desafio para vocês e esse é um dos grandes se não maiores......\n",TimeUnit.MILLISECONDS, temp_narrativa);
+		
+		Digita("\n   Vocês estão preparados?\n",TimeUnit.MILLISECONDS, temp_narrativa);
+		
 		Digita("   Um dos propulsores da nave Start Coding situada na constelação de Aldebaran perto do planeta Mitry, necessita de reparos"
 				+ " e possivelmente a sua troca.\n"
 				+ "\r\n"
