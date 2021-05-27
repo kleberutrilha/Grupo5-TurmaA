@@ -276,10 +276,13 @@ class menu {
 		case "A":
 			Digita("\n   Ótimo! Mas você está preparado para um desafio administrativo no RH? Não vamos te enganar... A situação aqui é caótica...  ",
 					TimeUnit.MILLISECONDS, temp_narrativa);
-
+		break;
+				
 		case "B":
 			Digita("\n\n   Você pode até ignorar isso, mas será momentaneo. Afinal, o desafio começará AGORA! ",
 					TimeUnit.MILLISECONDS, temp_narrativa);
+		break;
+				
 		}
 
 		Digita(" \n\n      *DERREPENTE TOCA UM ALARME ESTRANHO*\n ", TimeUnit.MILLISECONDS, temp_narrativa);
@@ -451,7 +454,7 @@ class menu {
 				+ ">>> \n\n ", TimeUnit.MILLISECONDS, temp_narrativa);
 
 		// Parte do Lucas
-		Digita("      UM NOVO DIA AMANHECE........ AGORA VOCÊ NO QUARTO DIA DO PROCESSO SELETIVO .........\n",
+		Digita("      UM NOVO DIA AMANHECE........ AGORA VOCÊ ESTA NO QUARTO DIA DO PROCESSO SELETIVO .........\n",
 				TimeUnit.MILLISECONDS, temp_narrativa);
 
 		Digita("\n   O ambiente do escritório do dia anterior era realmente encantador, mas o que esperam vocês agora é algo de outra galáxia......\n ",
@@ -469,14 +472,14 @@ class menu {
 				+ " palavras(Afinal ele está cansado, pois veio\n   literalmente pulando entre as plataformas para chegar até vocês).\n",
 				TimeUnit.MILLISECONDS, temp_narrativa);
 
-		Digita("\n   Bem-vindos meus caros viajantes intergaláticos, esse é nosso espaço de pesquisas espaciais onde procuramos por diversas"
+		Digita("\n   \"Bem-vindos meus caros viajantes intergaláticos, esse é nosso espaço de pesquisas espaciais onde procuramos por diversas"
 				+ " fomas de vidas que nosso universo abriga, ao qual,\n   ainda não conhecemos.\n",
 				TimeUnit.MILLISECONDS, temp_narrativa);
 
 		Digita("\n   Sem mais delongas, tenho um desafio para vocês e esse é um dos grandes se não maiores......\n",
 				TimeUnit.MILLISECONDS, temp_narrativa);
 
-		Digita("\n   Vocês estão preparados?\n", TimeUnit.MILLISECONDS, temp_narrativa);
+		Digita("\n   Vocês estão preparados?\"\n", TimeUnit.MILLISECONDS, temp_narrativa);
 
 		Digita("\n   Um dos propulsores da nave Start Coding situada na constelação de Aldebaran perto do planeta Mitry, necessita de reparos"
 				+ " e possivelmente a sua troca.\n" + "\r\n"
