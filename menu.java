@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 class menu {
-	static int temp_dialog = 0, temp_narrativa = 0, temp_transicao = 0;
+	static int temp_dialog = 100, temp_narrativa = 15, temp_transicao = 01;
 
 	public static void main(String[] args) throws Exception {
 		Scanner entrada = new Scanner(System.in);
@@ -85,7 +85,7 @@ class menu {
 
 	static void jogo() throws Exception { // A história e desafios que o jogador terá que enfrentar.
 		Scanner entrada = new Scanner(System.in);
-		int escolha_menu, temp_narrativa = 0, cont_Fayol = 0, cont_Taylor = 0, perdeu = 0;
+		int escolha_menu, temp_narrativa = 15, cont_Fayol = 0, cont_Taylor = 0, perdeu = 0;
 		String resposta;
 		boolean saida = false;
 
